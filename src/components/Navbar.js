@@ -1,12 +1,13 @@
 import React from "react";
-
+import logo from '../images/logo.png';
+import '../style.css';
 class Navbar extends React.Component{
     render(){
         return(
             <nav>
-                <img src={require('../images/logo.png')} alt = 'logo'/>
-                <h3>ReactsFacts</h3>
-                <h4>React Course - Project 1</h4>
+                <img src={logo} alt = 'logo' className ="nav--icon"/>
+                <h3 className ="nav--logo_text" >ReactsFacts</h3>
+                <h4 className ="nav--title">React Course - Project 1</h4>
             </nav>
         )
     }
